@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CryptoPulse - Real-Time Market Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <span class="pulse-dot"></span>
+        <h1>CryptoPulse</h1>
+      </div>
+      <p class="subtitle">Live tracking powered by public market feeds</p>
+    </header>
+
+    <div class="controls">
+      <input type="text" id="searchInput" placeholder="Search by name or symbol (e.g., BTC, ETH)..." />
+      <button id="refreshBtn">Refresh</button>
+    </div>
+
+    <div id="loader" class="loader hidden">Fetching live prices...</div>
+    <div id="errorMessage" class="error-banner hidden"></div>
+
+    <div class="grid" id="cryptoGrid"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
